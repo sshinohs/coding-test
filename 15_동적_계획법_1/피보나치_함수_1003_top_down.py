@@ -1,11 +1,10 @@
 
-num = int(input())
-
 global count_zero
-global count_one
-
 count_zero = 0
+global count_one
 count_one = 0
+
+num = int(input())
 
 def fibonacci(n):
     global count_zero
@@ -20,7 +19,5 @@ def fibonacci(n):
         return fibonacci(n-1) + fibonacci(n-2)
 
 fibonacci(num)
-
-print(count_zero,end='')
-print(' ',end='')
+print(count_zero)
 print(count_one)
