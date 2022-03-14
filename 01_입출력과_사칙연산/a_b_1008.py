@@ -1,4 +1,4 @@
 a = input()
-b = a.split()
+b, c = map(int, a.split())
 
-print(int(b[0])/int(b[1]))
+print(b/c)
