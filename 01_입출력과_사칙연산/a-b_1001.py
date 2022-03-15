@@ -1,4 +1,2 @@
-a = input()
-b = a.split()
-
-print(int(b[0])-int(b[1]))
+a, b = map(int, input().split())
+print(a-b)
