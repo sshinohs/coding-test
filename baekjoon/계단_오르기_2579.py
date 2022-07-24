@@ -18,6 +18,8 @@ for i in range(2, N+2):
 
 # print(steps)
 
+print(cumul)
+
 print(max(cumul[-1]))
 
 # print(cumul)
