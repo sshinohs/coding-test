@@ -20,7 +20,6 @@ for _ in range(T):
             else:
                 nums[val] += 1
         elif command[0] == 'D':
-            # print('val', val)
             if val == 1:
                 while h_max and nums[-h_max[0]] == 0:
                     heapq.heappop(h_max)
@@ -30,23 +29,9 @@ for _ in range(T):
             elif val == -1:
                 while h_min and nums[h_min[0]] == 0:
                     heapq.heappop(h_min)
-                # print(h_min[0])
                 if h_min:
                     nums[h_min[0]] -= 1
                     heapq.heappop(h_min)
-                    # print(val)
-                    # print(nums)
-                    
-        #     if h_min:
-        #         if val == 1:
-        #             max_value = heapq.heappop(h_max)
-        #             h_min.remove(-max_value)
-        #         elif val == -1:
-        #             min_value = heapq.heappop(h_min)
-        #             h_max.remove(-min_value)
-        # print('h_min', h_min)
-        # print('h_max', h_max)
-        # print(nums)
     while h_max and nums[-h_max[0]] == 0:
         heapq.heappop(h_max)        
     while h_min and nums[h_min[0]] == 0:
