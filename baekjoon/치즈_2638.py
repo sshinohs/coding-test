@@ -11,8 +11,6 @@ board = []
 for _ in range(N):
     board.append(list(map(int, input().split())))
 
-
-
 def bfs(board, N, M, st):
     arr = copy.deepcopy(board)
     q = deque()
