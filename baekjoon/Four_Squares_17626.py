@@ -3,8 +3,6 @@ import math
 
 input = sys.stdin.readline
 
-# n = int(input())
-
 dp = [math.inf] * (50001)
 
 dp[0] = 0
