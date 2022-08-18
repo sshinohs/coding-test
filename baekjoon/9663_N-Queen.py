@@ -11,10 +11,6 @@ board = [[1] * N for _ in range(N)]
 # print(board)
 
 def nqueen(board):
-    # print('%%')
-    # for row in board:
-    #     print(row)
-    # print('##')
     if len(board) == 1:
         return sum(board[0])
     if sum(board[0]) == 0:
