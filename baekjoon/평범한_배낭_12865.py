@@ -7,6 +7,10 @@ N, K = map(int, input().split())
 stuff = [(0, 0)]
 sheet = [[0] * (K+1) for _ in range(N+1)]
 
+for row in sheet:
+    print(row)
+print()
+
 for _ in range(N):
     stuff.append(tuple(map(int, input().split())))
 
@@ -19,5 +23,12 @@ for i in range(1, N+1):
             sheet[i][j] = sheet[i-1][j]
         else:
             sheet[i][j] = max(sheet[i-1][j], sheet[i-1][j-w]+v)
+        
+        for row in sheet:
+            print(row)
+        print()
 
+for row in sheet:
+    print(row)
+print()
 print(sheet[N][K])
